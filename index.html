@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Офіційний магазин текстилю Viluta">
   <meta name="twitter:image" content="https://offkosss172.github.io/HomeTekstilViluta/img/Viluta_logo-UA.png">
   <link rel="icon" href="img/Viluta_logo-UA.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 
 
   <script type="application/ld+json">
@@ -50,13 +50,19 @@
 </head>
 
 <script>
-console.log(navigator.userAgent);
+const ua = navigator.userAgent.toLowerCase();
 
-if (
-    navigator.userAgent.includes("TikTok") ||
-    navigator.userAgent.includes("TTWebView")
-) {
-    document.body.classList.add("tiktok-browser");
+const isTikTok =
+    ua.includes('tiktok') ||
+    ua.includes('musical_ly') ||
+    ua.includes('bytedance') ||
+    ua.includes('trill');
+
+const isInstagram =
+    ua.includes('instagram');
+
+if (isTikTok && !isInstagram) {
+    document.body.classList.add('tiktok-browser');
 }
 </script>
   
