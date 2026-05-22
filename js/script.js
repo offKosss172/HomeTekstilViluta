@@ -20,13 +20,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
-
-  const isTikTok = navigator.userAgent.includes('TikTok');
-
-  if (isTikTok) {
-      document.body.classList.add('tiktok-browser');
-  }
-
-});
