@@ -205,7 +205,7 @@ img {
     visibility .4s;
 }
 
-.tiktok-browser .tiktok-instruction{
+.tiktok-instruction{
   opacity:1;
   visibility:visible;
   transform:translateX(-50%) translateY(0);
