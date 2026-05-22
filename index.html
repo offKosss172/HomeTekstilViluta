@@ -48,6 +48,18 @@
 
   <script defer src="js/script.js"></script>
 </head>
+
+<script>
+console.log(navigator.userAgent);
+
+if (
+    navigator.userAgent.includes("TikTok") ||
+    navigator.userAgent.includes("TTWebView")
+) {
+    document.body.classList.add("tiktok-browser");
+}
+</script>
+  
 <body>
 
 <main>
