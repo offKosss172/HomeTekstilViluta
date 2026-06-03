@@ -179,12 +179,12 @@ img {
 
 
 
-
 .tiktok-instruction{
   position:fixed;
   left:50%;
   bottom:16px;
-  transform:translateX(-50%) translateY(120%);
+
+  transform:translateX(-50%) translateY(0);
 
   width:90%;
   max-width:420px;
@@ -196,19 +196,13 @@ img {
   padding:20px 12px;
   z-index:99999;
 
-  opacity:0;
-  visibility:hidden;
+  opacity:1;
+  visibility:visible;
 
   transition:
     transform .55s cubic-bezier(.22,1,.36,1),
     opacity .4s ease,
     visibility .4s;
-}
-
-.tiktok-browser .tiktok-instruction{{
-  opacity:1;
-  visibility:visible;
-  transform:translateX(-50%) translateY(0);
 
   animation:
     tiktokInstructionShake .7s ease-in-out 5s 2;
